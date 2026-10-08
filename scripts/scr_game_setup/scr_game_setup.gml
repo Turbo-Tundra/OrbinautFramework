@@ -20,19 +20,19 @@ function scr_game_setup()
 	global.start_exclusive_fullscreen = true;
 	global.start_room = rm_dev_menu;
 	
-	global.player_physics = PHYSICS.S2;
-	global.cpu_behaviour = CPU_BEHAVIOUR.S3;
+	global.player_physics = PHYSICS.S1;
+	global.cpu_behaviour = CPU_BEHAVIOUR.S2;
 	global.rotation_mode = ROTATION.CLASSIC;
 	global.better_solid_collision = false;
 	global.better_angle_snap = false;
-	global.spin_dash = true;
-	global.dash	= true;
+	global.spin_dash = false;
+	global.dash	= false;
 	global.drop_dash = false;
-	global.double_spin = true;
+	global.double_spin = false;
 	global.cd_timer = false;
 	global.cd_camera = false;
 	global.roll_lock = true;
-	global.speed_cap = false;
+	global.speed_cap = true;
 	global.roll_speed_cap = true;
 	
 	// Values set here will apply only if loading into the stage directly

@@ -42,12 +42,12 @@ if !_is_single_act && player.player_type == PLAYER.KNUCKLES
 
 draw_set_font(global.font_data[? spr_font_large]);
 draw_set_halign(fa_center);
-draw_text(_dx, _dy, string(_player_text) + " GOT");
+draw_text(_dx, _dy, string(_player_text) + " HAS");
 
 _dx = _centre_x + offset_line2 * _factor_x;
 _dy = _centre_y - 38;
 
-draw_text(_dx - 13 * !_is_single_act, _dy, _is_single_act ? "THROUGH ZONE" : "THROUGH ACT");
+draw_text(_dx - 13 * !_is_single_act, _dy, _is_single_act ? "PASSED  ZONE" : "PASSED");
 draw_sprite(spr_gui_act, obj_rm_stage.act_index, _dx + 98, _dy + 4);
 
 _dx = _centre_x + offset_time * _factor_x;

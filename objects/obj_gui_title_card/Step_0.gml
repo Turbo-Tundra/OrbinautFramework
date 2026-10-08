@@ -1,6 +1,6 @@
-if timer <= 96
+if timer <= 216
 {
-    if timer == 96
+    if timer == 160
     {
         speed_x *= 2;
         speed_y *= 2;
@@ -8,7 +8,7 @@ if timer <= 96
 		if obj_game.fade_state == FADE_STATE.PLAIN_COLOUR
 		{
 			fade_perform_black(FADE_DIRECTION.IN, 1);
-			
+						
 			// Do not update during the fade transition
 			max_allowed_game_state = GAME_STATE.STOP_OBJECTS;
 		}
@@ -19,29 +19,32 @@ if timer <= 96
 			view_data[_v].allow_updates = true;
 		}
     }
+	else if timer >= 44
+	{
+        offset_act = max(offset_act - speed_x, 0);
+    }
+	else if timer >= 24
+	{
+        offset_zone = max(offset_zone - speed_x, 0);
+	}
     else if timer >= 8
     {
         offset_banner = min(offset_banner + speed_y, 0);
         offset_zonename = max(offset_zonename - speed_x, 0);
-        offset_zone = max(offset_zone - speed_x, 0);
-        offset_act = max(offset_act - speed_x, 0);
-    }
+	}
 }
 else
 {
-    if timer == 152
+    if timer == 288
     {
         instance_destroy(); obj_game.allow_pause = true;
     }
-    else if timer >= 120
+    else if timer >= 204
     {
-        offset_zonename -= speed_x;
-        offset_zone += speed_x;
-        offset_act += speed_x;
-    }
-    else
-    {
-        offset_banner -= speed_y;
+		offset_zonename += speed_x;
+		offset_zone += speed_x;
+		offset_act -= speed_x;
+		offset_banner -= speed_x;
     }
 }
 
