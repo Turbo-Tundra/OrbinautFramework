@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":8.303,
+  "duration":12.011562,
   "exportDir":"bgm",
   "name":"snd_bgm_game_over",
   "parent":{

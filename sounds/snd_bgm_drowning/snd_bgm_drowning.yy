@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":10.818833,
+  "duration":11.841125,
   "exportDir":"bgm",
   "name":"snd_bgm_drowning",
   "parent":{

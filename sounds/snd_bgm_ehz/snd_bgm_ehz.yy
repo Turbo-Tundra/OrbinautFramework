@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":45.05727,
+  "duration":45.05725,
   "exportDir":"bgm",
   "name":"snd_bgm_ehz",
   "parent":{

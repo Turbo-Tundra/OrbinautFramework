@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_sonic_continue",
   "bboxMode":0,
-  "bbox_bottom":23,
+  "bbox_bottom":26,
   "bbox_left":0,
-  "bbox_right":38,
+  "bbox_right":39,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -13,11 +13,13 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"3066a279-07bf-4c19-8e4b-0c72d0f62d45","name":"3066a279-07bf-4c19-8e4b-0c72d0f62d45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0e92e865-db95-4300-9fb1-848ea435749f","name":"0e92e865-db95-4300-9fb1-848ea435749f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"e57be8d3-bef5-4990-a77e-b6bf1be271dc","name":"e57be8d3-bef5-4990-a77e-b6bf1be271dc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f59a7c21-4ccc-4ad6-84ac-d8a75242c04b","name":"f59a7c21-4ccc-4ad6-84ac-d8a75242c04b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":24,
+  "height":27,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"686a793e-e1ce-45cc-9594-26cacb300b14","blendMode":0,"displayName":"default","isLocked":false,"name":"686a793e-e1ce-45cc-9594-26cacb300b14","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -50,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":2.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -73,8 +75,14 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3066a279-07bf-4c19-8e4b-0c72d0f62d45","path":"sprites/spr_sonic_continue/spr_sonic_continue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"cfdde749-7ff7-42c1-b2a4-7af83ad89797","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0e92e865-db95-4300-9fb1-848ea435749f","path":"sprites/spr_sonic_continue/spr_sonic_continue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a8a8aa75-3959-4fff-a397-3aadd99af9f6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e57be8d3-bef5-4990-a77e-b6bf1be271dc","path":"sprites/spr_sonic_continue/spr_sonic_continue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c67662f9-537d-4943-a35c-27cbc4f6ce2d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"c67662f9-537d-4943-a35c-27cbc4f6ce2d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f59a7c21-4ccc-4ad6-84ac-d8a75242c04b","path":"sprites/spr_sonic_continue/spr_sonic_continue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a329ce3a-da93-44e0-b79e-f55c6866e659","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -90,5 +98,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":39,
+  "width":40,
 }

@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":10.443042,
+  "duration":33.858936,
   "exportDir":"bgm",
   "name":"snd_bgm_invincibility",
   "parent":{

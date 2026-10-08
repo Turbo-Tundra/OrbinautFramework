@@ -105,5 +105,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":27,
+  "width":29,
 }

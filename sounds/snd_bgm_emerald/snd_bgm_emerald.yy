@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.10775,
+  "duration":3.1831458,
   "exportDir":"bgm",
   "name":"snd_bgm_emerald",
   "parent":{

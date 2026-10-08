@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":51.322376,
+  "duration":76.90496,
   "exportDir":"bgm",
   "name":"snd_bgm_special_stage",
   "parent":{

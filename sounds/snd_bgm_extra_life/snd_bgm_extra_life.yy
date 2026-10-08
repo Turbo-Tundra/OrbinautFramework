@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.1456459,
+  "duration":4.2394376,
   "exportDir":"bgm",
   "name":"snd_bgm_extra_life",
   "parent":{

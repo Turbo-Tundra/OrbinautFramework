@@ -111,6 +111,7 @@
     {"id":{"name":"M68000","path":"notes/M68000/M68000.yy",},},
     {"id":{"name":"Music Credits","path":"notes/Music Credits/Music Credits.yy",},},
     {"id":{"name":"RGB-9","path":"notes/RGB-9/RGB-9.yy",},},
+    {"id":{"name":"Sprite Credits","path":"notes/Sprite Credits/Sprite Credits.yy",},},
     {"id":{"name":"obj_air_bubbler","path":"objects/obj_air_bubbler/obj_air_bubbler.yy",},},
     {"id":{"name":"obj_animal","path":"objects/obj_animal/obj_animal.yy",},},
     {"id":{"name":"obj_background_toggle","path":"objects/obj_background_toggle/obj_background_toggle.yy",},},

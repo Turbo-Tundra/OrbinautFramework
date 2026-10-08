@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.9089375,
+  "duration":6.1916876,
   "exportDir":"bgm",
   "name":"snd_bgm_act_clear",
   "parent":{

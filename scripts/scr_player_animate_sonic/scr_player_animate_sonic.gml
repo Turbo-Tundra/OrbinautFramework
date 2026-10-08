@@ -9,7 +9,7 @@ function scr_player_animate_sonic()
 			{
 				if sprite_index != spr_sonic_idle_super
 				{
-					animator.start(spr_sonic_idle_super, 0, 0, 8);
+					animator.start(spr_sonic_idle_super, 0, 0, 6);
 				}
 			}
 			else if sprite_index != spr_sonic_idle
@@ -121,20 +121,15 @@ function scr_player_animate_sonic()
 			{
 				sprite_index = spr_sonic_duck_super;
 			}
-			else if sprite_index != spr_sonic_duck
+			else
 			{
-				animator.start(spr_sonic_duck, 0, 1, 4);
+				sprite_index = spr_sonic_duck;
 			}
 			
 		break;
 		
 		case ANIM.LOOK_UP:
-		
-			if sprite_index != spr_sonic_look_up
-			{
-				animator.start(spr_sonic_look_up, 0, 1, 4);
-			}
-			
+			sprite_index = spr_sonic_look_up;
 		break;
 		
 		case ANIM.GRAB:
@@ -162,7 +157,7 @@ function scr_player_animate_sonic()
 		
 			if sprite_index != spr_sonic_skid
 			{
-				animator.start(spr_sonic_skid, 0, 3, 6);
+				animator.start(spr_sonic_skid, 0, 1, 4);
 			}
 			else if animator.timer < 0
 			{

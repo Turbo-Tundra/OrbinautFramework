@@ -25,7 +25,7 @@ function scr_game_setup()
 	global.rotation_mode = ROTATION.CLASSIC;
 	global.better_solid_collision = false;
 	global.better_angle_snap = false;
-	global.spin_dash = false;
+	global.spin_dash = true;
 	global.dash	= false;
 	global.drop_dash = false;
 	global.double_spin = false;
@@ -64,11 +64,11 @@ function scr_game_setup()
 	#region AUDIO LOOPS
 	
 	audio_bgm_set_loop(snd_bgm_bonus_stage, 10.850, 39.850);
-	audio_bgm_set_loop(snd_bgm_invincibility, 0.000, 10.300);
+	audio_bgm_set_loop(snd_bgm_invincibility, 1.000, 22.900);
 	audio_bgm_set_loop(snd_bgm_high_speed, 1.400, 27.370);
 	audio_bgm_set_loop(snd_bgm_continue, 1.400, 11.150);
 	audio_bgm_set_loop(snd_bgm_super_character, 0.307, 38.707);
-	audio_bgm_set_loop(snd_bgm_special_stage, 1.710, 51.210);
+	audio_bgm_set_loop(snd_bgm_special_stage, 0.000, 65.900);
 	audio_bgm_set_loop(snd_bgm_boss, 19.400, 83.200);
 	audio_bgm_set_loop(snd_bgm_ghz, 14.800, 53.200);
 	audio_bgm_set_loop(snd_bgm_ehz, 3.470, 44.940);
