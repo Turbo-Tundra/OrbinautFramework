@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":39.476273,
+  "duration":39.122395,
   "exportDir":"bgm",
   "name":"snd_bgm_super_character",
   "parent":{
