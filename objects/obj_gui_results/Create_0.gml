@@ -39,12 +39,13 @@ on_fade_load_next_room = function()
 
 depth = RENDER_DEPTH_HUD;
 continue_timer = -1;
+offset_banner = 256;
 offset_line1 = -256;
 offset_line2 = 256;
 offset_time = 512;
-offset_rings = 528;
-offset_perfect = 544;
-offset_total = 560;
+offset_total = 528;
+offset_rings = 544;
+offset_perfect = 560;
 speed_x = 16;
 state = RESULTS_STATE.LOAD;
 state_timer = 40;

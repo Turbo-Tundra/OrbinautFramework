@@ -648,6 +648,7 @@
     {"id":{"name":"spr_gui_hud_time","path":"sprites/spr_gui_hud_time/spr_gui_hud_time.yy",},},
     {"id":{"name":"spr_gui_pause_selection","path":"sprites/spr_gui_pause_selection/spr_gui_pause_selection.yy",},},
     {"id":{"name":"spr_gui_pause","path":"sprites/spr_gui_pause/spr_gui_pause.yy",},},
+    {"id":{"name":"spr_gui_results_continue_special","path":"sprites/spr_gui_results_continue_special/spr_gui_results_continue_special.yy",},},
     {"id":{"name":"spr_gui_results_rings_special","path":"sprites/spr_gui_results_rings_special/spr_gui_results_rings_special.yy",},},
     {"id":{"name":"spr_gui_results_rings","path":"sprites/spr_gui_results_rings/spr_gui_results_rings.yy",},},
     {"id":{"name":"spr_gui_results_score_special","path":"sprites/spr_gui_results_score_special/spr_gui_results_score_special.yy",},},

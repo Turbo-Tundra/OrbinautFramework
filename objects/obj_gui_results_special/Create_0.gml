@@ -11,8 +11,7 @@ enum SPECIAL_RESULTS_STATE
 	SUPER_MSG
 }
 
-#macro SPECIAL_RESULTS_OFFSET_LINE_1 -288
-#macro SPECIAL_RESULTS_OFFSET_LINE_2  288
+#macro SPECIAL_RESULTS_OFFSET_LINE -288
 
 on_fade_start_return = function()
 {
@@ -30,16 +29,18 @@ on_fade_end_return = function()
 	return false;
 }
 
-offset_line1 = SPECIAL_RESULTS_OFFSET_LINE_1;
-offset_line2 = SPECIAL_RESULTS_OFFSET_LINE_2;
+offset_banner = 288;
+offset_line = SPECIAL_RESULTS_OFFSET_LINE;
 offset_score = 528;	
 offset_rings = 544;
+offset_continue = 560;
 speed_x = 16;
 state = SPECIAL_RESULTS_STATE.LOAD;
 state_timer = 20;
 message_super = false;
 message_emerald = false;
 ring_bonus = 50;
+continues = 0;
 total_score = 0;
 
 audio_bgm_play(snd_bgm_act_clear);

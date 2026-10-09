@@ -14,12 +14,13 @@ switch state
     case RESULTS_STATE.MOVE_IN:
 	case RESULTS_STATE.MOVE_OUT:
 	
+		offset_banner = max(offset_banner - speed_x, 0);
 		offset_line1 = min(offset_line1 + speed_x, 0);
         offset_line2 = max(offset_line2 - speed_x, 0);
         offset_time = max(offset_time - speed_x, 0);
+		offset_total = max(offset_total - speed_x, 0);
         offset_rings = max(offset_rings - speed_x, 0);
         offset_perfect = max(offset_perfect - speed_x, 0);
-        offset_total = max(offset_total - speed_x, 0);
 		
 		if state == RESULTS_STATE.MOVE_IN
 		{
@@ -83,9 +84,7 @@ switch state
 		
         if total_bonus >= 10000
         {
-			continue_timer = 0;
             state_timer = 300;
-            global.continue_count++;  
         }
         else
         {
@@ -97,14 +96,6 @@ switch state
     break;
 	
 	case RESULTS_STATE.POST_TALLY:
-	
-		if continue_timer >= 0
-		{
-			if ++continue_timer == 60
-			{
-				audio_sfx_play(snd_continue);
-			}
-		}
 		
         if --state_timer != 0
         {

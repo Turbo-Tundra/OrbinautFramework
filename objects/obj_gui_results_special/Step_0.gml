@@ -14,10 +14,11 @@ switch state
     case SPECIAL_RESULTS_STATE.MOVE:
     case SPECIAL_RESULTS_STATE.WAIT_EXIT:
 	
-        offset_line1 = min(offset_line1 + speed_x, 0);
-        offset_line2 = max(offset_line2 - speed_x, 0);
+		offset_banner = max(offset_banner - speed_x, 0);
+        offset_line = min(offset_line + speed_x, 0);
         offset_score = max(offset_score - speed_x, 0);
         offset_rings = max(offset_rings - speed_x, 0);
+		offset_continue = max(offset_continue - speed_x, 0);
         
         if --state_timer > 0
         {
@@ -93,10 +94,9 @@ switch state
 		}
 		
 		state_timer = -1;
-        offset_line1 = max(offset_line1 - speed_x * 2, SPECIAL_RESULTS_OFFSET_LINE_1);
-        offset_line2 = min(offset_line2 + speed_x * 2, SPECIAL_RESULTS_OFFSET_LINE_2);
+        offset_line = min(offset_line + speed_x * 2, SPECIAL_RESULTS_OFFSET_LINE);
         
-        if offset_line1 == SPECIAL_RESULTS_OFFSET_LINE_1 && offset_line2 == SPECIAL_RESULTS_OFFSET_LINE_2
+        if offset_line == SPECIAL_RESULTS_OFFSET_LINE
         {
             message_super = true;
             state_timer = 180;

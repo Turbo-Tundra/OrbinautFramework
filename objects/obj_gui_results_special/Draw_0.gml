@@ -12,8 +12,14 @@ var _centre_y = _y + _h * 0.5;
 var _factor_x = _w / 320;
 var _player_text, _dx, _dy;
 
-_dx = _centre_x + offset_line1 * _factor_x;
-_dy = _centre_y - 88;
+_dx = _centre_x + offset_banner * _factor_x;
+_dy = _centre_y - 61;
+
+draw_sprite(spr_gui_card_banner, 1, _dx, _dy);
+draw_set_halign(fa_center);
+
+_dx = _centre_x + offset_line * _factor_x;
+_dy = _centre_y - 68;
 
 switch global.player_main
 {
@@ -37,45 +43,41 @@ switch global.player_main
 draw_set_font(global.font_data[? spr_font_large_alt]);
 draw_set_halign(fa_center);
 
-// Upper text
 if message_super
 {
-    draw_text(_dx, _dy, "NOW " + string(_player_text) + " CAN BE");
+    draw_text(_dx, _dy, "SUPER UNLOCKED");
 }
-else if message_emerald
+else if global.emerald_count == 7
 {
-    draw_text(_dx, _dy, string(_player_text) + (global.emerald_count == 7 ? " HAS ALL THE" : " GOT A"));
-}
-
-_dx = _centre_x + offset_line2 * _factor_x;
-_dy = _centre_y - 70;
-
-// Lower text
-if global.emerald_count >= 7
-{
-    draw_text(_dx, _dy, message_super ? "SUPER " + string(_player_text) : "CHAOS EMERALDS");
+    draw_text(_dx, _dy, string(_player_text) + " GOT THEM ALL");
 }
 else
 {
-    draw_text(_dx, _dy, message_emerald ? "CHAOS EMERALD" : "SPECIAL STAGE");
+    draw_text(_dx, _dy, message_emerald ? "CHAOS EMERALDS" : "SPECIAL STAGE");
 }
 
 _dx = _centre_x + offset_score * _factor_x;
-_dy = _centre_y + 32;
+_dy = _centre_y + 26;
 
 draw_set_font(global.font_data[? spr_font_digits_alt]);
 draw_set_halign(fa_right);
-draw_sprite(spr_gui_results_score_special, 0, _dx - 75, _dy);
-draw_text(_dx + 97, _dy - 7, total_score);
+draw_sprite(spr_gui_results_score_special, 0, _dx - 66, _dy);
+draw_text(_dx + 85, _dy - 7, total_score);
 
 _dx = _centre_x + offset_rings * _factor_x;
-_dy = _centre_y + 56;
+_dy = _centre_y + 44;
 
-draw_sprite(spr_gui_results_rings_special, 0, _dx - 75, _dy);
-draw_text(_dx + 97, _dy - 7, ring_bonus);
+draw_sprite(spr_gui_results_rings_special, 0, _dx - 46, _dy);
+draw_text(_dx + 85, _dy - 7, ring_bonus);
+
+_dx = _centre_x + offset_continue * _factor_x;
+_dy = _centre_y + 62;
+
+draw_sprite(spr_gui_results_continue_special, 0, _dx - 54, _dy);
+draw_text(_dx + 85, _dy - 7, continues);
 
 _dx = _centre_x;
-_dy = _centre_y - 36;
+_dy = _centre_y - 16;
 
 draw_set_alpha(FRAME_COUNTER % 2 == 0 ? 1 : 0);
 
@@ -83,13 +85,13 @@ for (var _i = 0; _i < global.emerald_count; _i++)
 {
     switch _i
     {
-        case 0: draw_sprite(spr_gui_emerald, _i, _dx, _dy); break;    
-        case 1: draw_sprite(spr_gui_emerald, _i, _dx + 24, _dy + 12); break;
-        case 2: draw_sprite(spr_gui_emerald, _i, _dx + 24, _dy + 36); break;
-        case 3: draw_sprite(spr_gui_emerald, _i, _dx, _dy + 48); break;
-        case 4: draw_sprite(spr_gui_emerald, _i, _dx - 24, _dy + 36); break;
-        case 5: draw_sprite(spr_gui_emerald, _i, _dx - 24, _dy + 12); break;
-        case 6: draw_sprite(spr_gui_emerald, _i, _dx, _dy + 24); break;
+        case 0: draw_sprite(spr_gui_emerald, _i, _dx - 24, _dy); break;
+        case 1: draw_sprite(spr_gui_emerald, _i, _dx + 24, _dy); break;
+        case 2: draw_sprite(spr_gui_emerald, _i, _dx - 48, _dy); break;
+        case 3: draw_sprite(spr_gui_emerald, _i, _dx + 48, _dy); break;
+        case 4: draw_sprite(spr_gui_emerald, _i, _dx - 72, _dy); break;
+        case 5: draw_sprite(spr_gui_emerald, _i, _dx + 72, _dy); break;
+        case 6: draw_sprite(spr_gui_emerald, _i, _dx, _dy); break;
     }
 }
 

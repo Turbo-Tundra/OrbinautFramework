@@ -25,7 +25,7 @@ function scr_game_setup()
 	global.rotation_mode = ROTATION.CLASSIC;
 	global.better_solid_collision = false;
 	global.better_angle_snap = false;
-	global.spin_dash = true;
+	global.spin_dash = false;
 	global.dash	= false;
 	global.drop_dash = false;
 	global.double_spin = false;
@@ -51,8 +51,8 @@ function scr_game_setup()
 	
 	#region FONTS
 	
-	font_register(spr_font_large, "ABCDEFGHIJKLMNOPQRSTUVWXYZ", true, 0);
-	font_register(spr_font_large_alt, "ABCDEFGHIJKLMNOPQRSTUVWXYZ", true, 0);
+	font_register(spr_font_large, "ABCDEFGHIJKLMNOPQRSTUVWXYZ.", true, 1);
+	font_register(spr_font_large_alt, "ABCDEFGHIJKLMNOPQRSTUVWXYZ.", true, 1);
 	font_register(spr_font_small, "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890*.:!-+_", false, 0);
 	font_register(spr_font_digits, "0123456789:';", false, 1);
 	font_register(spr_font_digits_alt, "0123456789:';", false, 1);

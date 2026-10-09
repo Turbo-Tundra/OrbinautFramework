@@ -4,4 +4,4 @@ event_animator();
 event_culler(CULL_ACTION.DESTROY);
 
 depth = draw_depth(0);
-animator.start(sprite_index, 0, 26, 2);
+animator.start(sprite_index, 0, 5, 6);
