@@ -39,12 +39,25 @@ start_results = function()
 }
 
 state = SPECIAL_STAGE_STATE.IDLE;
+bg_scroll_special = 0;
 
-bg_convert("Far_Clouds", 0, 0, 0, 0, 0);
-bg_convert("Close_Clouds", 0, 0, -0.05, 0, 0);
-bg_convert("Reflection", 0, 0, -0.05, 0, 0);
+bg_convert("Clouds_1", 0, 0, -0.5, 0, 0);
+bg_convert("Clouds_2", 0, 0, -0.5, 0, 0);
+bg_convert("Clouds_3", 0, 0, -0.375, 0, 0);
+bg_convert("Clouds_4", 0, 0, -0.375, 0, 0);
+bg_convert("Clouds_5", 0, 0, -0.1, 0, 0);
+bg_convert("Clouds_6", 0, 0, -0.05, 0, 0);
+bg_convert("Bubbles", 0, 0, 0, -0.5, 0);
+bg_convert("Foreground_Animals", 0, 0, bg_scroll_special, 0, 0);
 
-deform_layers(["Reflection"], 1, 0.25, DEFORM_DATA.LBZ_1, undefined);
+sprite_set_animation(spr_bg_special_1, 6);
+sprite_set_animation(spr_bg_special_2, 6);
+sprite_set_animation(spr_bg_special_3, 6);
+sprite_set_animation(spr_bg_special_4, 6);
+sprite_set_animation(spr_bg_special_5, 6);
+sprite_set_animation(spr_bg_special_6, 6);
+sprite_set_animation(spr_bg_special_7, 6);
+sprite_set_animation(spr_bg_special_8, 6);
 
 discord_set_data("SPECIAL STAGE", "", "room_special", undefined);
 audio_bgm_play(snd_bgm_special_stage);

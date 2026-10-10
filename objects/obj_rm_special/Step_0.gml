@@ -1,6 +1,20 @@
-if obj_game.fade_state != FADE_STATE.NONE || state = SPECIAL_STAGE_STATE.RESULTS
+if (obj_game.fade_state != FADE_STATE.NONE || state == SPECIAL_STAGE_STATE.RESULTS)
 {
-	return;
+    return;
+}
+
+// Change the horizontal scroll effect by frame.
+if (_frame >= 9 && _frame <= 190)
+{
+    bg_scroll_special = 0.5;
+}
+else if (_frame >= 202 && _frame <= 384)
+{
+    bg_scroll_special = -0.5;
+}
+else
+{
+    bg_scroll_special = 0;
 }
 
 if state == SPECIAL_STAGE_STATE.IDLE
