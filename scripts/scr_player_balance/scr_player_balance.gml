@@ -92,24 +92,11 @@ function _balance_left(_panic_cond)
 		break;
 			
 		case PLAYER.TAILS:
+		case PLAYER.KNUCKLES:
 		case PLAYER.AMY:
 				
 			animation = ANIM.BALANCE;
 			facing = -1;
-			
-		break;
-			
-		case PLAYER.KNUCKLES:
-			
-			if facing == -1
-			{
-				animation = ANIM.BALANCE;
-			}
-			else if animation != ANIM.BALANCE_FLIP
-			{
-				animation = ANIM.BALANCE_FLIP;
-				facing = -1;
-			}
 			
 		break;
 	}
@@ -144,24 +131,11 @@ function _balance_right(_panic_cond)
 		break;
 		
 		case PLAYER.TAILS:
+		case PLAYER.KNUCKLES:
 		case PLAYER.AMY:
 				
 			animation = ANIM.BALANCE;
 			facing = 1;
-			
-		break;
-		
-		case PLAYER.KNUCKLES:
-			
-			if facing == 1
-			{
-				animation = ANIM.BALANCE;
-			}
-			else if animation != ANIM.BALANCE_FLIP
-			{
-				animation = ANIM.BALANCE_FLIP;
-				facing = 1;
-			}
 			
 		break;
 	}

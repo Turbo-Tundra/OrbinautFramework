@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_gui_continue_knuckles",
   "bboxMode":0,
-  "bbox_bottom":21,
+  "bbox_bottom":22,
   "bbox_left":0,
   "bbox_right":15,
   "bbox_top":0,
@@ -17,7 +17,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":22,
+  "height":23,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"74a59ae7-e522-404e-aaac-3b8a5542465e","blendMode":0,"displayName":"default","isLocked":false,"name":"74a59ae7-e522-404e-aaac-3b8a5542465e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

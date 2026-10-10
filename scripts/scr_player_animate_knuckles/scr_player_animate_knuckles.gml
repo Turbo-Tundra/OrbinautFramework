@@ -183,7 +183,7 @@ function scr_player_animate_knuckles()
 		
 			if sprite_index != spr_knuckles_balance
 			{
-				animator.start(spr_knuckles_balance, animation == ANIM.BALANCE_FLIP ? 4 : 0, 33, 4);
+				animator.start(spr_knuckles_balance, 0, 0, 6);
 			}
 			
 		break;
