@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bumper_s2",
+  "%Name":"obj_bumper_s1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bumper_s2",
+  "name":"obj_bumper_s1",
   "overriddenProperties":[],
   "parent":{
     "name":"Stage",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bumper_s2",
-    "path":"sprites/spr_bumper_s2/spr_bumper_s2.yy",
+    "name":"spr_bumper_s1",
+    "path":"sprites/spr_bumper_s1/spr_bumper_s1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

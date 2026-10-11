@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bumper_s2",
+  "%Name":"obj_special_barrier",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bumper_s2",
+  "name":"obj_special_barrier",
   "overriddenProperties":[],
   "parent":{
-    "name":"Stage",
-    "path":"folders/Objects/Stage.yy",
+    "name":"Special Stage",
+    "path":"folders/Objects/Special Stage.yy",
   },
   "parentObjectId":{
-    "name":"obj_bumper",
-    "path":"objects/obj_bumper/obj_bumper.yy",
+    "name":"obj_solid",
+    "path":"objects/obj_solid/obj_solid.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bumper_s2",
-    "path":"sprites/spr_bumper_s2/spr_bumper_s2.yy",
+    "name":"spr_special_barrier",
+    "path":"sprites/spr_special_barrier/spr_special_barrier.yy",
   },
   "spriteMaskId":null,
   "visible":true,
