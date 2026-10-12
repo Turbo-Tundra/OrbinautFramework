@@ -3,6 +3,20 @@ if (obj_game.fade_state != FADE_STATE.NONE || state == SPECIAL_STAGE_STATE.RESUL
     return;
 }
 
+if instance_exists(animal_bg)
+{
+	var _frame = animal_bg.image_index;
+
+	if (_frame >= 9 && _frame <= 190)
+	{
+	    animal_bg.special_offset_x += 0.5;
+	}
+	else if (_frame >= 202 && _frame <= 384)
+	{
+	    animal_bg.special_offset_x -= 0.5;
+	}
+}
+
 if state == SPECIAL_STAGE_STATE.IDLE
 {
     var _input_press = input_check_pressed(0);
@@ -17,7 +31,7 @@ if state == SPECIAL_STAGE_STATE.IDLE
     {
 		audio_bgm_stop(1);
         audio_sfx_play(snd_warp_exit);
-        fade_perform_white(FADE_DIRECTION.OUT, 3, start_results);  
+        fade_perform_white(FADE_DIRECTION.OUT, 3, start_results);
     }
 }
 else if !audio_is_playing(snd_bgm_emerald)

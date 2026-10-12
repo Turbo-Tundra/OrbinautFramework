@@ -1,3 +1,8 @@
+if instance_exists(obj_gui_results_special)
+{
+	instance_destroy();
+}
+
 FOR_EACH_PLAYER
 {
 	var _player = player_get(_p);

@@ -34,6 +34,7 @@ enum PLAYER_STATE
 	HURT,
 	MANUAL_INTERACT,
 	MANUAL_NO_INTERACT,
+	SPECIAL_STAGE,
 	DEBUG_MODE,
 	DEATH,
 	RESPAWN
@@ -65,6 +66,7 @@ enum PHYSICS
 enum ACTION
 {
 	NONE,
+	SPECIAL,
 	SPIN_DASH,
 	DASH,
 	DROP_DASH,
@@ -119,6 +121,7 @@ enum ANIM
 	WAIT,
 	MOVE,
 	SPIN,
+	SPECIAL_SPIN,
 	SPIN_DASH,
 	PUSH,
 	DUCK,
@@ -219,7 +222,14 @@ reset_substate = function()
 	}
 	
 	// Clear stuff
-	action = ACTION.NONE;
+	if instance_exists(obj_rm_special)
+	{
+		action = ACTION.SPECIAL;
+	}
+	else
+	{
+		action = ACTION.NONE;
+	}
 	shield_state = SHIELD_STATE.NONE;
 	set_push_anim_by = noone;
 	on_object = noone;
@@ -704,7 +714,16 @@ is_grounded = true;
 is_jumping = false;
 is_underwater = false;
 is_forced_roll = false;
-air_lock_flag = false;
+
+if instance_exists(obj_rm_special)
+{
+	air_lock_flag = true;
+}
+else
+{
+	air_lock_flag = false;
+}
+
 death_state = DEATH_STATE.WAIT;
 stick_to_convex = false;
 run_on_water = false;

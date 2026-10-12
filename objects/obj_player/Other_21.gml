@@ -105,6 +105,31 @@ switch state
 		record_data(0);
 		
 	break;
+	
+	case PLAYER_STATE.SPECIAL_STAGE:
+	
+		if scr_player_debug_mode_enter()
+		{
+			break;
+		}
+		
+		scr_player_parameters();
+		scr_player_special();
+		scr_player_movement_special();
+		
+		if scr_player_level_bound()
+		{
+			break;
+		}
+						
+		scr_player_position();
+		scr_player_collision_air_special();
+	
+		scr_player_update_status();
+		scr_player_animate();
+		scr_player_update_hitbox();
+		
+	break;
 
 	case PLAYER_STATE.HURT:
 		

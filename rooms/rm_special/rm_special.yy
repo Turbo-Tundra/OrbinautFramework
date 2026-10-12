@@ -93,6 +93,7 @@
     {"name":"inst_55D59405","path":"rooms/rm_special/rm_special.yy",},
     {"name":"inst_368029D0","path":"rooms/rm_special/rm_special.yy",},
     {"name":"inst_55B8EEF","path":"rooms/rm_special/rm_special.yy",},
+    {"name":"inst_1E0E4C16","path":"rooms/rm_special/rm_special.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -221,6 +222,7 @@
         {"$GMRInstance":"v4","%Name":"inst_55D59405","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55D59405","objectId":{"name":"obj_special_breakable_barrier","path":"objects/obj_special_breakable_barrier/obj_special_breakable_barrier.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":180.0,"y":588.0,},
         {"$GMRInstance":"v4","%Name":"inst_368029D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_368029D0","objectId":{"name":"obj_special_breakable_barrier","path":"objects/obj_special_breakable_barrier/obj_special_breakable_barrier.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":204.0,"y":588.0,},
         {"$GMRInstance":"v4","%Name":"inst_55B8EEF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55B8EEF","objectId":{"name":"obj_special_emerald","path":"objects/obj_special_emerald/obj_special_emerald.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":180.0,"y":636.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1E0E4C16","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E0E4C16","objectId":{"name":"obj_player_spawn_special","path":"objects/obj_player_spawn_special/obj_player_spawn_special.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":216.0,"y":72.0,},
       ],"layers":[],"name":"Objects","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Chunks","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Chunks","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":64,"SerialiseWidth":64,"TileCompressedData":[
           -6,0,-6,1,1,0,-57,-2147483648,2,1,0,-3,-2147483648,2,1,0,-57,-2147483648,2,1,0,-3,-2147483648,2,1,0,

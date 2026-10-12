@@ -41,6 +41,7 @@ start_results = function()
 }
 
 state = SPECIAL_STAGE_STATE.IDLE;
+bg_scroll_special = 0;
 
 bg_convert("Clouds_1", 0, 0, -0.5, 0, 0);
 bg_convert("Clouds_2", 0, 0, -0.5, 0, 0);
@@ -49,7 +50,7 @@ bg_convert("Clouds_4", 0, 0, -0.375, 0, 0);
 bg_convert("Clouds_5", 0, 0, -0.1, 0, 0);
 bg_convert("Clouds_6", 0, 0, -0.05, 0, 0);
 bg_convert("Bubbles", 0, 0, 0, -0.5, 0);
-bg_convert("Foreground_Animals", 0, 0, 0, 0, 0);
+animal_bg = bg_convert("Foreground_Animals", 0, 0, 0, 0, 0);
 
 sprite_set_animation(spr_bg_special_1, 6);
 sprite_set_animation(spr_bg_special_2, 6);

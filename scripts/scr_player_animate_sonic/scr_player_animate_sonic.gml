@@ -66,6 +66,7 @@ function scr_player_animate_sonic()
 		break;
 			
 		case ANIM.SPIN:
+		case ANIM.SPECIAL_SPIN:
 		
 			if action == ACTION.DROP_DASH && dropdash_charge >= PARAM_DROPDASH_CHARGE
 			{
