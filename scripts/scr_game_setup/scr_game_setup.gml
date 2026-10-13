@@ -25,14 +25,14 @@ function scr_game_setup()
 	global.rotation_mode = ROTATION.CLASSIC;
 	global.better_solid_collision = false;
 	global.better_angle_snap = false;
-	global.spin_dash = false;
+	global.spin_dash = true;
 	global.dash	= false;
 	global.drop_dash = false;
 	global.double_spin = false;
 	global.cd_timer = false;
 	global.cd_camera = false;
 	global.roll_lock = true;
-	global.speed_cap = true;
+	global.speed_cap = false;
 	global.roll_speed_cap = true;
 	
 	// Values set here will apply only if loading into the stage directly
@@ -65,7 +65,7 @@ function scr_game_setup()
 	
 	audio_bgm_set_loop(snd_bgm_bonus_stage, 10.850, 39.850);
 	audio_bgm_set_loop(snd_bgm_invincibility, 1.000, 22.900);
-	audio_bgm_set_loop(snd_bgm_high_speed, 1.400, 27.370);
+	audio_bgm_set_loop(snd_bgm_high_speed, 0.600, 39.000);
 	audio_bgm_set_loop(snd_bgm_continue, 1.400, 11.150);
 	audio_bgm_set_loop(snd_bgm_super_character, 0.307, 38.707);
 	audio_bgm_set_loop(snd_bgm_special_stage, 0.000, 65.900);
@@ -81,6 +81,12 @@ function scr_game_setup()
 	
 	// Default
 	tile_calculate_data(ts_collision_default, spr_collision_default);
+	
+	// Special Stage
+	tile_calculate_data(ts_collision_special, spr_collision_special,
+	[
+					0.0000
+	]);
 	
 	// Trial Stadium
 	tile_calculate_data(ts_collision_tsz, spr_collision_tsz,

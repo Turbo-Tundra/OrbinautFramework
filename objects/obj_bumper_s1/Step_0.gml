@@ -33,3 +33,8 @@ FOR_EACH_PLAYER
 		animator.start(sprite_index, 1, 2, 6);
 	}
 }
+
+if instance_exists(obj_gui_results_special)
+{
+	instance_destroy();
+}

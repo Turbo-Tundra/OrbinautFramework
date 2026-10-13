@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"player_spawn_special",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_spawn_special",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Functions/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

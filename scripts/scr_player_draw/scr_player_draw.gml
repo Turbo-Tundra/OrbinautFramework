@@ -1,6 +1,6 @@
 /// @self obj_player
 function scr_player_draw()
-{
+{	
 	if player_type == PLAYER.TAILS
 	{
 	    with obj_tail

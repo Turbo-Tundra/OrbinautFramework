@@ -9,64 +9,15 @@ event_animator();
 #region MACRO & ENUM
 
 #macro AIR_TIMER_DEFAULT 1800
-#macro CAMERA_VIEW_TIMER_DEFAULT 120
-#macro PARAM_GRV_DEFAULT GLOBAL_PARAM_GRV
 #macro PARAM_GRV_UNDERWATER 0.0625
 #macro PARAM_GRV_TAILS_UP -0.125
 #macro PARAM_GRV_TAILS_DOWN 0.03125
 #macro PARAM_DROPDASH_CHARGE 22
 #macro PARAM_SKID_SPEED_THRESHOLD 4
-#macro PARAM_RECORD_LENGTH 32
-#macro PARAM_CPU_DELAY 16
-
-enum PLAYER
-{
-	SONIC = 0,
-	TAILS = 1,
-	KNUCKLES = 2,
-	AMY = 3,
-	NONE = 255
-}
-
-enum PLAYER_STATE
-{
-	DEFAULT,
-	HURT,
-	MANUAL_INTERACT,
-	MANUAL_NO_INTERACT,
-	SPECIAL_STAGE,
-	DEBUG_MODE,
-	DEATH,
-	RESPAWN
-}
-
-enum CPU_STATE
-{
-	MAIN,
-	STUCK,
-	RESPAWN_INIT,
-	RESPAWN
-}
-
-enum CPU_BEHAVIOUR
-{
-	S2,
-	S3
-}
-
-enum PHYSICS
-{
-	S1,
-	CD,
-	S2,
-	S3,
-	SK
-}
 
 enum ACTION
 {
 	NONE,
-	SPECIAL,
 	SPIN_DASH,
 	DASH,
 	DROP_DASH,
@@ -178,12 +129,6 @@ on_fade_death_restart = function()
 	return false;
 }
 
-set_velocity = function()
-{
-	vel_x = spd * dcos(angle);
-	vel_y = spd * -dsin(angle);
-}
-
 respawn = function()
 {
 	event_perform(ev_create, 0);
@@ -222,14 +167,7 @@ reset_substate = function()
 	}
 	
 	// Clear stuff
-	if instance_exists(obj_rm_special)
-	{
-		action = ACTION.SPECIAL;
-	}
-	else
-	{
-		action = ACTION.NONE;
-	}
+	action = ACTION.NONE;
 	shield_state = SHIELD_STATE.NONE;
 	set_push_anim_by = noone;
 	on_object = noone;
@@ -261,10 +199,11 @@ release_glide = function(_frame)
 	reset_gravity();
 }
 
-get_rotation_bounds = function()
+is_invincible = function()
 {
-	return [22.5, 337.5 + (ANGLE_INCREMENT * global.player_physics == PHYSICS.S1)];
+	return inv_frames > 0 || item_inv_timer > 0 || super_timer > 0 || shield_state == SHIELD_STATE.DOUBLE_SPIN;
 }
+
 
 land = function()
 {
@@ -391,11 +330,6 @@ roll = function()
 	radius_x = radius_x_spin;
 	radius_y = radius_y_spin;
 	animation = ANIM.SPIN;
-}
-
-is_invincible = function()
-{
-	return inv_frames > 0 || item_inv_timer > 0 || super_timer > 0 || shield_state == SHIELD_STATE.DOUBLE_SPIN;
 }
 
 hurt = function(_hazard, _sound = snd_hurt)
@@ -536,7 +470,7 @@ record_data = function(_insert_pos)
 
 	var _data =
 	[
-		input_copy(input_press), input_copy(input_down), floor(x), floor(y), set_push_anim_by, facing
+		input_copy(input_press), input_copy(input_down), floor(x), floor(y), set_push_anim_by, facing, sprite_index, image_index, visual_angle
 	];
 	
 	ds_list_insert(recorded_data, _insert_pos, _data);
@@ -708,21 +642,13 @@ switch player_type
 radius_x = radius_x_normal;
 radius_y = radius_y_normal;
 radius_wall = radius_x_normal + 1;
-	
+
 state = PLAYER_STATE.DEFAULT;
 is_grounded = true;
 is_jumping = false;
 is_underwater = false;
 is_forced_roll = false;
-
-if instance_exists(obj_rm_special)
-{
-	air_lock_flag = true;
-}
-else
-{
-	air_lock_flag = false;
-}
+air_lock_flag = false;
 
 death_state = DEATH_STATE.WAIT;
 stick_to_convex = false;

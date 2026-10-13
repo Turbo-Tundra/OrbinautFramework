@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":27.493792,
+  "duration":39.399918,
   "exportDir":"bgm",
   "name":"snd_bgm_high_speed",
   "parent":{

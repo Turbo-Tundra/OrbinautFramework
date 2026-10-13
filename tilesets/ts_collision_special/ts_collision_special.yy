@@ -9,8 +9,8 @@
   },
   "name":"ts_collision_special",
   "out_columns":1,
-  "out_tilehborder":2,
-  "out_tilevborder":2,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
   "parent":{
     "name":"Collision",
     "path":"folders/Tile Sets/Collision.yy",

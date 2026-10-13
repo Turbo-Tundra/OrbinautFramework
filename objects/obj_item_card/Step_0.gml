@@ -87,17 +87,13 @@ switch state
                 
 	                if _player.item_inv_timer == 0
 	                {
-	                    for (var _i = 0; _i < 8; _i++)
-	                    {
-	                        with instance_create(x, y, obj_invincibility_star)
-							{
-								player = _player.id;
-								star_index = _i;
-							}
-	                    }
+	                    with instance_create(_player.x, _player.y, obj_invincibility)
+						{
+							player = _player.id;
+						}
+					}
 					
-	                    audio_bgm_play(snd_bgm_invincibility);
-	                }
+					audio_bgm_play(snd_bgm_invincibility);
 				
 	                _player.item_inv_timer = 1200;
 				

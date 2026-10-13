@@ -9,8 +9,8 @@
   },
   "name":"ts_fg_special",
   "out_columns":2,
-  "out_tilehborder":2,
-  "out_tilevborder":2,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
   "parent":{
     "name":"Special Stage",
     "path":"folders/Tile Sets/Special Stage.yy",

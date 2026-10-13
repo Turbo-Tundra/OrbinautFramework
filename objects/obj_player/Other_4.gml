@@ -11,7 +11,6 @@ with obj_gameobject
 	{
 		// Player
 		case obj_player_spawn:
-		case obj_player_spawn_special:
 		case obj_player:
 		case obj_tail:
 		case obj_shield:

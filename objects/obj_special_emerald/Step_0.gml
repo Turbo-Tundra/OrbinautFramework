@@ -42,7 +42,8 @@ FOR_EACH_PLAYER
 		continue;
 	}
 	
-	audio_sfx_play(snd_bgm_emerald);
+	state = _input_held.action2 ? SPECIAL_STAGE_STATE.ALL_EMERALDS : SPECIAL_STAGE_STATE.EMERALD;		
+	audio_bgm_play(snd_bgm_emerald);
 	instance_create(x, y, obj_sparkle);
 	instance_destroy();
 	

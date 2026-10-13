@@ -1,0 +1,47 @@
+{
+  "$GMObject":"",
+  "%Name":"obj_player_special_spawn",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"obj_player_special_spawn",
+  "overriddenProperties":[],
+  "parent":{
+    "name":"Special Stage",
+    "path":"folders/Objects/Special Stage.yy",
+  },
+  "parentObjectId":{
+    "name":"obj_gameobject",
+    "path":"objects/obj_gameobject/obj_gameobject.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"iv_sonic_spawn_excluded","filters":[],"listItems":[
+        "PLAYER.TAILS",
+        "PLAYER.KNUCKLES",
+        "PLAYER.AMY",
+      ],"multiselect":true,"name":"iv_sonic_spawn_excluded","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":6,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_player_spawn_special",
+    "path":"sprites/spr_player_spawn_special/spr_player_spawn_special.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}
