@@ -25,14 +25,14 @@ function scr_game_setup()
 	global.rotation_mode = ROTATION.CLASSIC;
 	global.better_solid_collision = false;
 	global.better_angle_snap = false;
-	global.spin_dash = true;
+	global.spin_dash = false;
 	global.dash	= false;
 	global.drop_dash = false;
 	global.double_spin = false;
 	global.cd_timer = false;
 	global.cd_camera = false;
 	global.roll_lock = true;
-	global.speed_cap = false;
+	global.speed_cap = true;
 	global.roll_speed_cap = true;
 	
 	// Values set here will apply only if loading into the stage directly
